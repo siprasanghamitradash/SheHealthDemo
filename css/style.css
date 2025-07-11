@@ -1,3 +1,16 @@
+:root {
+  /* Brand Colors */
+  --bs-primary: #fe90ab;
+  --bs-secondary: #92432d;
+
+  /* Optional overrides for consistency */
+  --bs-light: #fff7f9;
+  --bs-dark: #2d1b16;
+  --bs-success: #4caf50;
+  --bs-danger: #dc3545;
+  --bs-warning: #ffc107;
+  --bs-info: #17a2b8;
+}
 
 
 /*** Spinner Start ***/
@@ -50,17 +63,7 @@ h6,
     font-family: 'Montserrat', sans-serif;
 }
 
-.display-1 {
-  font-size: calc(1.2rem + 3vw); /* smaller than original */
-  font-weight: 700;
-  line-height: 1.2;
-}
 
-@media (min-width: 1200px) {
-  .display-1 {
-    font-size: 3.5rem; /* instead of 5rem */
-  }
-}
 
 .display-1,
 .display-2,
