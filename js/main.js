@@ -59,22 +59,20 @@
   // Modal Video
   $(document).ready(function () {
     var $videoSrc;
-
     $(".btn-play").click(function () {
       $videoSrc = $(this).data("src");
     });
+    console.log($videoSrc);
 
-    // Set src BEFORE the modal opens
-    $("#videoModal").on("show.bs.modal", function () {
+    $("#videoModal").on("shown.bs.modal", function (e) {
       $("#video").attr(
         "src",
-        $videoSrc + "?autoplay=1&modestbranding=1&showinfo=0"
+        $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
       );
     });
 
-    // Clear src AFTER the modal closes
-    $("#videoModal").on("hidden.bs.modal", function () {
-      $("#video").attr("src", "");
+    $("#videoModal").on("hide.bs.modal", function (e) {
+      $("#video").attr("src", $videoSrc);
     });
   });
 })(jQuery);
