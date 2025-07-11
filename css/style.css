@@ -50,6 +50,18 @@ h6,
     font-family: 'Montserrat', sans-serif;
 }
 
+.display-1 {
+  font-size: calc(1.2rem + 3vw); /* smaller than original */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 3.5rem; /* instead of 5rem */
+  }
+}
+
 .display-1,
 .display-2,
 .display-3,
