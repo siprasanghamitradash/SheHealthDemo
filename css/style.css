@@ -318,6 +318,10 @@ h6,
     color: #92432d;
 }
 
+.text-primary{
+    color: #9c4939;
+}
+
 .video .btn-play span {
     display: block;
     position: relative;
