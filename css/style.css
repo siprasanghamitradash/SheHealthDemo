@@ -314,6 +314,10 @@ h6,
     height: auto;
 }
 
+.text-secondary{
+    color: #92432d;
+}
+
 .video .btn-play span {
     display: block;
     position: relative;
